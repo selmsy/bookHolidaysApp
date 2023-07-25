@@ -24,6 +24,10 @@ gap: 10px;
     margin: 20px 0px 100px 0px;
 }
 
+.headerContainer.listMode{
+    margin: 20px 0px 0px 0px;
+}
+
 .headerListItem.active{
     border: 1px solid white;
     padding: 10px;
@@ -117,4 +121,8 @@ box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
     background-color: white;
     border: 1px solid #e951d2;
     cursor: pointer;
+}
+
+.optionCounterBtn:disabled{
+    cursor: not-allowed;
 }
