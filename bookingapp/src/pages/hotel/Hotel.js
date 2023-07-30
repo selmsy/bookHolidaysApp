@@ -6,8 +6,10 @@ import {faLocationDot} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MailList from '../../components/mailList/MailList'
 import Footer from '../../components/footer/Footer'
+import { useState } from 'react'
 const Hotel = () => {
-
+const [slide, setSlide] = useState(0);
+const [open, setOpen] = useState(false);
   const photos = [
     {
       src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707778.jpg?k=56ba0babbcbbfeb3d3e911728831dcbc390ed2cb16c51d88159f82bf751d04c6&o=&hp=1",
@@ -29,12 +31,18 @@ const Hotel = () => {
     },
   ];
 
+const handleOpen = (i) => {
+  setSlide(i);
+  setOpen(true);
+};
 
   return (
     <div>
 <Navbar/>
 <Header type="list"/>
 <div className='hotelContainer'>
+  {open && <div className='slider'>
+    </div>}
   <div className='hotelWraper'>
     <div className='hotelTitle'>
       Hotel Palm Gold
@@ -49,9 +57,9 @@ const Hotel = () => {
     Book now and get a discount
    </span>
 <div className='hotelImages'>
-  {photos.map(photo=>(
+  {photos.map((photo, i)=>(
     <div className='hotelImgWrapper'>
-      <img src={photo.src} alt='' className='hotelImg'/>
+      <img src={photo.src} alt='' className='hotelImg' onClick={handleOpen}/>
       </div>
   ))}
 </div>
