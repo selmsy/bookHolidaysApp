@@ -67,3 +67,14 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .hotelDetailsPrice > button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #d904c0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

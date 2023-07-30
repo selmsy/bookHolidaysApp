@@ -66,7 +66,7 @@ const Hotel = () => {
               This is our guests' favourite part of Chicago, according to independent reviews.
               </p>
   </div>
-    <div className='hotelDetailsPrice'></div>
+    <div className='hotelDetailsPrice'>
     <h1>Perfect for a 8-night stay!</h1>
               <span>
                 Located in the real heart of Chicago, this property has an
@@ -75,6 +75,8 @@ const Hotel = () => {
               <h2>
                 <b>$825</b> (8 nights)
               </h2>
+              <button>Reserve or Book Now!</button>
+              </div>
 </div>
   </div>
 </div>
