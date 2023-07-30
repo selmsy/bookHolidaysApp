@@ -17,7 +17,7 @@
 
   .listSearch {
     flex: 1;
-    background-color: #febb02;
+    background-color: #f482c6;
     padding: 10px;
     border-radius: 10px;
     position: sticky;
@@ -25,7 +25,7 @@
     height: max-content;
   }
   
-  .lsTitle{
+  .listTitle{
     font-size: 20px;
     color: #555;
     margin-bottom: 10px;
@@ -74,9 +74,9 @@
   
   .listSearch>button{
     padding: 10px;
-    background-color: #0071c2;
-    color: white;
-    border: none;
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid pink;
     width: 100%;
     font-weight: 500;
     cursor: pointer;
