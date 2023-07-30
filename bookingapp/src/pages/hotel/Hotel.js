@@ -49,14 +49,14 @@ const Hotel = () => {
 <div className='hotelImages'>
   {photos.map(photo=>(
     <div className='hotelImgWrapper'>
-      <img src={photo.src} alt='' className='hotelImage'/>
+      <img src={photo.src} alt='' className='hotelImg'/>
       </div>
   ))}
 </div>
 <div className='hotelDetails'>
   <div className='hotelDetailsText'>
   <h1 className="hotelTitle">Stay in the heart of City</h1>
-              <p className="hotelDesc">
+              <p className="hotelDescription">
               Featuring a shared lounge, a restaurant as well as a bar, citizenM Chicago Downtown is located in the centre of Chicago, 1.7 km from Ohio Street Beach. 
               With free WiFi, this 4-star hotel offers a 24-hour front desk and a business centre. The property is non-smoking and is situated 2.4 km from Oak Street Beach.
               At the hotel, each room includes a desk. All units in citizenM Chicago Downtown are equipped with a TV with cable channels and an iPad.

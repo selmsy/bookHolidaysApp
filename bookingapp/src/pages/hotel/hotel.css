@@ -38,9 +38,32 @@
   .hotelImgWrapper {
     width: 33%;
   }
+  .hotelImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-  .hotelImage {
+  .hotelImg {
     width: 100%;
     object-fit: cover;
     cursor: pointer;
+  }
+
+  .hotelDetailsText {
+    flex: 3;
+  }
+  
+  .hotelDescription {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .hotelDetailsPrice {
+    flex: 1;
+    background-color: #fccbef;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
