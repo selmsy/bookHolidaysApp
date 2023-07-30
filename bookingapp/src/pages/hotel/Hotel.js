@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MailList from '../../components/mailList/MailList'
 import Footer from '../../components/footer/Footer'
 import { useState } from 'react'
+import {faCircleArrowLeft,faCircleArrowRight,faCircleXmark} from "@fortawesome/free-solid-svg-icons";
 const Hotel = () => {
 const [slide, setSlide] = useState(0);
 const [open, setOpen] = useState(false);
@@ -42,6 +43,10 @@ const handleOpen = (i) => {
 <Header type="list"/>
 <div className='hotelContainer'>
   {open && <div className='slider'>
+  <FontAwesomeIcon icon={faCircleXmark} className="close" onClick={() => setOpen(false)}/>
+  <div className="sliderWrapper">
+  <img src={photos[slide].src} alt="" className="sliderImg" />
+    </div>        
     </div>}
   <div className='hotelWraper'>
     <div className='hotelTitle'>
