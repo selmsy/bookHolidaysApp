@@ -39,7 +39,7 @@ const Hotel = () => {
     </div>
     <div className='hotelAddress'>
       <FontAwesomeIcon icon={faLocationDot}/>
-      <span>York St 134 Chicago</span>
+      <span>80 East Wacker Place, Chicago Loop, Chicago, IL 60601, United States</span>
       </div>
       <span className='hotelDistance'>
       Location: 250 from center</span>
@@ -52,6 +52,29 @@ const Hotel = () => {
       <img src={photo.src} alt='' className='hotelImage'/>
       </div>
   ))}
+</div>
+<div className='hotelDetails'>
+  <div className='hotelDetailsText'>
+  <h1 className="hotelTitle">Stay in the heart of City</h1>
+              <p className="hotelDesc">
+              Featuring a shared lounge, a restaurant as well as a bar, citizenM Chicago Downtown is located in the centre of Chicago, 1.7 km from Ohio Street Beach. 
+              With free WiFi, this 4-star hotel offers a 24-hour front desk and a business centre. The property is non-smoking and is situated 2.4 km from Oak Street Beach.
+              At the hotel, each room includes a desk. All units in citizenM Chicago Downtown are equipped with a TV with cable channels and an iPad.
+              A vegetarian, vegan or gluten-free breakfast can be enjoyed at the property.
+              Popular points of interest near the accommodation include Millennium Station, Shops at Northbridge and CIBC Theatre. 
+              The nearest airport is Midway International Airport, 18 km from citizenM Chicago Downtown.
+              This is our guests' favourite part of Chicago, according to independent reviews.
+              </p>
+  </div>
+    <div className='hotelDetailsPrice'></div>
+    <h1>Perfect for a 8-night stay!</h1>
+              <span>
+                Located in the real heart of Chicago, this property has an
+                excellent location score of 9.7!
+              </span>
+              <h2>
+                <b>$825</b> (8 nights)
+              </h2>
 </div>
   </div>
 </div>
