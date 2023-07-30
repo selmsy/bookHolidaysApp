@@ -26,6 +26,11 @@
   }
 
   .hotelPriceHighlight {
-    color: #008009;
+    color: #25cc30;
+    font-weight: 500;
+  }
+
+  .hotelDistance {
+    color: #f045e1;
     font-weight: 500;
   }
