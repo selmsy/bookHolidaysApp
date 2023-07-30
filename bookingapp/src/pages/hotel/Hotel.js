@@ -64,7 +64,7 @@ const handleOpen = (i) => {
 <div className='hotelImages'>
   {photos.map((photo, i)=>(
     <div className='hotelImgWrapper'>
-      <img src={photo.src} alt='' className='hotelImg' onClick={handleOpen}/>
+      <img src={photo.src} alt='' className='hotelImg' onClick={()=>handleOpen(i)}/>
       </div>
   ))}
 </div>
