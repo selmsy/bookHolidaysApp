@@ -37,6 +37,18 @@ const handleOpen = (i) => {
   setOpen(true);
 };
 
+const handleMove = (direction) => {
+  let newSlide;
+
+  if (direction === "l") {
+    newSlide = slide === 0 ? 5 : slide - 1;
+  } else {
+    newSlide = slide === 5 ? 0 : slide + 1;
+  }
+
+  setSlide(newSlide)
+};
+
   return (
     <div>
 <Navbar/>
@@ -44,9 +56,19 @@ const handleOpen = (i) => {
 <div className='hotelContainer'>
   {open && <div className='slider'>
   <FontAwesomeIcon icon={faCircleXmark} className="close" onClick={() => setOpen(false)}/>
+  <FontAwesomeIcon
+              icon={faCircleArrowLeft}
+              className="arrow"
+              onClick={() => handleMove("l")}
+            />
   <div className="sliderWrapper">
   <img src={photos[slide].src} alt="" className="sliderImg" />
-    </div>        
+    </div>  
+    <FontAwesomeIcon
+              icon={faCircleArrowRight}
+              className="arrow"
+              onClick={() => handleMove("r")}
+            />      
     </div>}
   <div className='hotelWraper'>
     <div className='hotelTitle'>
